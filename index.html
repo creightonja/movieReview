@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en" ng-app="movieReview">
+<head>
+  <meta charset="UTF-8">
+  <title>Jason's Movie Reviews</title>
+  <script src="lib/angular.js"></script>
+  <script src="lib/angular-ui-router.js"></script>
+  <script src="app.js"></script>
+  <script src="controllers/HeaderController.js"></script>
+  <script src="services/ReviewFactory.js"></script>
+  <script src="controllers/ReviewController.js"></script>
+
+  </script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div class="container">
+    <div ui-view="header">
+
+    </div>
+    <div ui-view="home">
+
+    </div>
+  </div>
+
+</body>
+</html>
