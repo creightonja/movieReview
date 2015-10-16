@@ -1,5 +1,7 @@
 <div ng-repeat="item in reviews">
-{{item.movieName}} -
-<p>{{item.movieReviewTitle}}</p> 
-{{item.movieReviewContent}}
+<a ng-click="setReview(item.movieReviewContent)">{{item.movieName}}</a>
+<p>{{item.movieReviewTitle}}</p>
+</div>
+<div>
+  {{theReview}}
 </div>

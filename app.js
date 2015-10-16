@@ -32,18 +32,4 @@ movieReview.config(function($stateProvider, $urlRouterProvider) {
 			},
 		}
 	});
-
-  $stateProvider.state('reviews.review', {
-    url: "/:reviewId",
-    
-    views: {
-      'header': {
-        templateUrl: 'partials/header.html',
-      },
-      'body': {
-        templateUrl: "partials/reviews.review.html",
-        controller: 'ReviewCtrl'
-      },
-    }
-  });
 });
